@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+
+  & h1 {
+    background-color: #44474c;
+    margin: 0;
+    color: rgb(218, 218, 218);
+    padding: 1rem 0;
+  }
+}
+
+.project__heading {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.projectOne,
+.projectTwo,
+.projectThree {
+  background-color: #9068be;
+  color: white;
+  height: 460px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0.5rem 2rem rgba($color: #000000, $alpha: 0.2);
+  transform: scale(0.99);
+  transition: all 0.2s ease;
+
+  &__buttons {
+    width: 60%;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+
+    & a {
+      width: 100%;
+      // background-color: grey;
+      border: 1px solid white;
+      padding: 7.5px 20px;
+      border-radius: 2px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:link,
+      &:visited {
+        color: white;
+      }
+
+      &:hover,
+      &:active {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  &:hover {
+    transform: scale(1);
+    box-shadow: 0 0.5rem 2rem rgba($color: #000000, $alpha: 0.3);
+  }
+}
+
+.projectOne {
+  &__image {
+    width: 100%;
+    height: 300px;
+  }
+
+  & p {
+    padding: 0 10px;
+  }
+}
+
+.projectTwo {
+  & p {
+    padding: 0 10px;
+  }
+}
+
+.projectThree {
+  & p {
+    padding: 0 10px;
+  }
+}
+
+.row {
+  width: 82.5%;
+}
+
+.heading {
+  margin: 2rem auto;
+  width: 80%;
+
+  & h4 {
+    font-size: 1.5rem;
+    // color: #0d7e7a;
+    color: #095c59;
+  }
+}
